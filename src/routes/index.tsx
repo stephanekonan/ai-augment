@@ -1,17 +1,33 @@
-import { createFileRoute } from "@tanstack/react-router";
-import {
-  Sparkles, Zap, TrendingUp, ShoppingBag, Code2, Rocket,
-  Check, X, Star, MessageCircle, Instagram, Twitter, ChevronDown,
-  ArrowRight, Crown, Shield, Bot,
-} from "lucide-react";
 import { useState } from "react";
+
+import {
+  ArrowRight,
+  Bot,
+  Check,
+  ChevronDown,
+  Code2,
+  Crown,
+  Instagram,
+  MessageCircle,
+  Rocket,
+  Shield,
+  ShoppingBag,
+  Sparkles,
+  Star,
+  TrendingUp,
+  Twitter,
+  X,
+  Zap,
+} from "lucide-react";
+
+import { createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Claude Skills — Compétences IA premium pour Claude AI" },
+      { title: "Claude Skills - Compétences IA premium pour Claude AI" },
       { name: "description", content: "Transforme Claude AI en expert spécialisé. Packs de compétences IA pour créer du contenu viral, vendre plus et coder mieux." },
-      { property: "og:title", content: "Claude Skills — Compétences IA premium" },
+      { property: "og:title", content: "Claude Skills - Compétences IA premium" },
       { property: "og:description", content: "Packs de compétences IA prêtes à l'emploi pour Claude AI." },
     ],
   }),
@@ -29,28 +45,28 @@ const advantages = [
 
 const packs = [
   {
-    id: "starter", name: "Starter Pack", icon: Sparkles, price: "9 900", oldPrice: null,
+    id: "starter", name: "Starter Pack", icon: Sparkles, price: "1 500", oldPrice: null,
     tagline: "Pour démarrer avec Claude",
     skills: ["Humanizer", "Compact", "Simplifier", "Proofreader"],
     benefits: ["Textes naturels et clairs", "Communication améliorée", "Gain de temps quotidien"],
     featured: false,
   },
   {
-    id: "pro", name: "Pro Pack", icon: TrendingUp, price: "24 900", oldPrice: null,
+    id: "pro", name: "Pro Pack", icon: TrendingUp, price: "2 500", oldPrice: "5 000 FCFA",
     tagline: "Pour créateurs & vendeurs",
     skills: ["ViralHook", "TikTokWriter", "SalesCloser", "ContentRepurpose"],
     benefits: ["Création de contenu viral", "Plus d'engagement", "Plus de conversions", "Business rapide"],
     featured: false,
   },
   {
-    id: "expert", name: "Expert Pack", icon: Code2, price: "39 900", oldPrice: null,
+    id: "expert", name: "Expert Pack", icon: Code2, price: "3 500", oldPrice: "7 000 FCFA",
     tagline: "Pour développeurs exigeants",
     skills: ["CodeReviewer", "CleanArchitect", "BugHunter", "APIArchitect"],
     benefits: ["Code propre et scalable", "Moins de bugs", "Architecture solide", "Niveau senior assisté"],
     featured: false,
   },
   {
-    id: "ultimate", name: "Ultimate Pack", icon: Crown, price: "59 900", oldPrice: "89 900",
+    id: "ultimate", name: "Ultimate Pack", icon: Crown, price: "6 000", oldPrice: "12 000 FCFA",
     tagline: "La solution IA complète",
     skills: ["Tous les packs inclus", "+ PromptEngineer", "+ StartupAdvisor", "+ AutomationExpert", "+ BusinessCoach"],
     benefits: ["Dev + business + contenu", "Remplace plusieurs outils", "Accélère tous les projets", "Best value absolue"],
@@ -104,9 +120,10 @@ function Nav() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 py-4">
         <nav className="glass rounded-2xl px-4 sm:px-6 py-3 grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4">
           <a href="#top" className="flex min-w-0 items-center gap-2">
-            <div className="h-8 w-8 shrink-0 rounded-lg bg-gradient-to-br from-primary to-primary-glow grid place-items-center">
+            {/* <div className="h-8 w-8 shrink-0 rounded-lg bg-linear-to-br from-primary to-primary-glow grid place-items-center">
               <Sparkles className="h-4 w-4 text-primary-foreground" />
-            </div>
+            </div> */}
+            <img src="/logo.webp" alt="Claude Skills Logo" className="h-12 w-12 shrink-0 rounded-lg" />
             <span className="font-display font-bold truncate">Claude Skills</span>
           </a>
           <div className="flex items-center gap-2 sm:gap-3 shrink-0">
@@ -408,7 +425,7 @@ function Footer() {
           </p>
         </div>
         <div className="flex flex-col gap-3 sm:items-end">
-          <a href="https://wa.me/" className="inline-flex items-center gap-2 glass rounded-full px-4 py-2 text-sm hover:border-primary/40 transition">
+          <a href="https://wa.me/2250508234878" className="inline-flex items-center gap-2 glass rounded-full px-4 py-2 text-sm hover:border-primary/40 transition">
             <MessageCircle className="h-4 w-4 text-primary" /> Contact WhatsApp
           </a>
           <div className="flex gap-2">
