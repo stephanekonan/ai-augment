@@ -19,6 +19,7 @@ import {
 } from "lucide-react";
 
 import { createFileRoute } from "@tanstack/react-router";
+import { Analytics } from "@vercel/analytics/react";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -108,6 +109,7 @@ function Landing() {
       <FAQ />
       <FinalCTA />
       <Footer />
+      <Analytics/>
     </main>
   );
 }
