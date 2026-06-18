@@ -389,7 +389,9 @@ function FinalCTA() {
           <div className="absolute inset-0 opacity-40" style={{ background: "radial-gradient(ellipse at center, oklch(0.72 0.18 38 / 0.3), transparent 70%)" }} />
           <div className="relative">
             <Shield className="h-10 w-10 mx-auto text-primary mb-5" />
-            <h2 className="text-3xl sm:text-5xl font-bold">Passe au niveau supérieur avec <br> <span className="text-gradient">Claude AI</span></h2>
+            <h2 className="text-3xl sm:text-5xl font-bold">
+              Passe au niveau supérieur avec <br /> <span className="text-gradient">Claude AI</span>
+            </h2>
             <p className="mt-5 text-muted-foreground max-w-xl mx-auto">
               Choisis ton pack et débloque la puissance des compétences IA dès aujourd'hui.
             </p>
