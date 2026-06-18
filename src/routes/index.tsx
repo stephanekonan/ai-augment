@@ -7,7 +7,6 @@ import {
   ChevronDown,
   Code2,
   Crown,
-  Instagram,
   MessageCircle,
   Rocket,
   Shield,
@@ -15,7 +14,6 @@ import {
   Sparkles,
   Star,
   TrendingUp,
-  Twitter,
   X,
   Zap,
 } from "lucide-react";
@@ -120,9 +118,6 @@ function Nav() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 py-4">
         <nav className="glass rounded-2xl px-4 sm:px-6 py-3 grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4">
           <a href="#top" className="flex min-w-0 items-center gap-2">
-            {/* <div className="h-8 w-8 shrink-0 rounded-lg bg-linear-to-br from-primary to-primary-glow grid place-items-center">
-              <Sparkles className="h-4 w-4 text-primary-foreground" />
-            </div> */}
             <img src="/logo.webp" alt="Claude Skills Logo" className="h-12 w-12 shrink-0 rounded-lg" />
             <span className="font-display font-bold truncate">Claude Skills</span>
           </a>
@@ -394,7 +389,7 @@ function FinalCTA() {
           <div className="absolute inset-0 opacity-40" style={{ background: "radial-gradient(ellipse at center, oklch(0.72 0.18 38 / 0.3), transparent 70%)" }} />
           <div className="relative">
             <Shield className="h-10 w-10 mx-auto text-primary mb-5" />
-            <h2 className="text-3xl sm:text-5xl font-bold">Passe au niveau supérieur avec <span className="text-gradient">Claude AI</span></h2>
+            <h2 className="text-3xl sm:text-5xl font-bold">Passe au niveau supérieur avec <br> <span className="text-gradient">Claude AI</span></h2>
             <p className="mt-5 text-muted-foreground max-w-xl mx-auto">
               Choisis ton pack et débloque la puissance des compétences IA dès aujourd'hui.
             </p>
@@ -415,9 +410,7 @@ function Footer() {
       <div className="mx-auto max-w-7xl grid sm:grid-cols-[1fr_auto] gap-8 items-start">
         <div>
           <div className="flex items-center gap-2 mb-3">
-            <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-primary to-primary-glow grid place-items-center">
-              <Sparkles className="h-4 w-4 text-primary-foreground" />
-            </div>
+            <img src="/logo.webp" alt="Claude Skills Logo" className="h-12 w-12 shrink-0 rounded-lg" />
             <span className="font-display font-bold">Claude Skills</span>
           </div>
           <p className="text-sm text-muted-foreground max-w-sm">
@@ -428,10 +421,6 @@ function Footer() {
           <a href="https://wa.me/2250508234878" className="inline-flex items-center gap-2 glass rounded-full px-4 py-2 text-sm hover:border-primary/40 transition">
             <MessageCircle className="h-4 w-4 text-primary" /> Contact WhatsApp
           </a>
-          <div className="flex gap-2">
-            <a href="#" aria-label="Instagram" className="h-9 w-9 rounded-full glass grid place-items-center hover:text-primary transition"><Instagram className="h-4 w-4" /></a>
-            <a href="#" aria-label="Twitter" className="h-9 w-9 rounded-full glass grid place-items-center hover:text-primary transition"><Twitter className="h-4 w-4" /></a>
-          </div>
         </div>
       </div>
       <div className="mx-auto max-w-7xl mt-10 pt-6 border-t border-border/50 text-xs text-muted-foreground text-center">
