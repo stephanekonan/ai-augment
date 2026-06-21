@@ -9,7 +9,7 @@ export const packs = [
     benefits: ["Textes naturels et clairs", "Communication améliorée", "Gain de temps quotidien"],
     featured: false,
     available: true,
-    url: "#starterUrl",
+    url: import.meta.env.VITE_PACK_STARTER_URL || "#",
   },
   {
     id: "pro", name: "Pro Pack", icon: TrendingUp, price: "2 500", oldPrice: "5 000 FCFA",
@@ -18,7 +18,7 @@ export const packs = [
     benefits: ["Création de contenu viral", "Plus d'engagement", "Plus de conversions", "Business rapide"],
     featured: false,
     available: true,
-    url: "#proUrl",
+    url: import.meta.env.VITE_PACK_PRO_URL || "#",
   },
   {
     id: "expert", name: "Expert Pack", icon: Code2, price: "3 500", oldPrice: "7 000 FCFA",
@@ -27,7 +27,7 @@ export const packs = [
     benefits: ["Code propre et scalable", "Moins de bugs", "Architecture solide", "Niveau senior assisté"],
     featured: false,
     available: false,
-    url: "#expertUrl",
+    url: import.meta.env.VITE_PACK_EXPERT_URL || "#",
   },
   {
     id: "ultimate", name: "Ultimate Pack", icon: Crown, price: "6 000", oldPrice: "12 000 FCFA",
@@ -36,7 +36,7 @@ export const packs = [
     benefits: ["Dev + business + contenu", "Remplace plusieurs outils", "Accélère tous les projets", "Best value absolue"],
     featured: true,
     available: false,
-    url: "#ultimateUrl",
+    url: import.meta.env.VITE_PACK_ULTIMATE_URL || "#",
   },
 ];
 

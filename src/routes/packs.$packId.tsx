@@ -78,15 +78,15 @@ const packDetails = {
 export const Route = createFileRoute("/packs/$packId")({
   component: PackDetailsPage,
   loader: ({ params }) => {
-    const packInfo = packs.find(p => p.id === params.packId);
     const details = packDetails[params.packId as keyof typeof packDetails];
-    if (!packInfo || !details) throw notFound();
-    return { packInfo, details };
+    if (!details) throw notFound();
+    return { packId: params.packId, details };
   }
 });
 
 function PackDetailsPage() {
-  const { packInfo, details } = Route.useLoaderData();
+  const { packId, details } = Route.useLoaderData();
+  const packInfo = packs.find(p => p.id === packId)!;
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -167,6 +167,8 @@ function PackDetailsPage() {
 
                 <a
                   href={packInfo.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-full inline-flex justify-center items-center gap-2 rounded-full bg-primary px-6 py-4 text-base font-bold text-primary-foreground hover:bg-primary-glow transition shadow-xl shadow-primary/40 animate-pulse-glow"
                 >
                   Acheter maintenant <ArrowRight className="h-5 w-5" />

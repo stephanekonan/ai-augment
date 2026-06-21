@@ -13,7 +13,7 @@ export function Nav() {
             <a href="#packs" className="hidden sm:inline text-sm text-muted-foreground hover:text-foreground transition">Packs</a>
             <a href="#faq" className="hidden sm:inline text-sm text-muted-foreground hover:text-foreground transition">FAQ</a>
             <a href="#packs" className="inline-flex items-center gap-1.5 rounded-full bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground hover:bg-primary-glow transition shadow-lg shadow-primary/30">
-              Acheter <ArrowRight className="h-3.5 w-3.5" />
+              Passer à l'action <ArrowRight className="h-3.5 w-3.5" />
             </a>
           </div>
         </nav>
